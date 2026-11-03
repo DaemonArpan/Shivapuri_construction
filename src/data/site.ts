@@ -38,6 +38,6 @@ export const services = [
 export const projects = Array.from({ length: 48 }, (_, i) => ({
   slug: `completed-project-${String(i + 1).padStart(2, '0')}`,
   title: 'Completed project',
-  image: `/images/projects/residential-visual-${String(i + 1).padStart(2, '0')}.jpeg`,
+  image: `${import.meta.env.BASE_URL}images/projects/residential-visual-${String(i + 1).padStart(2, '0')}.jpeg`,
   category: 'Completed by Shivapuri Group',
 }));
